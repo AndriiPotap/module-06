@@ -85,11 +85,13 @@ html { overflow-x: hidden; }
 }   
 
 .menu_link:hover{
+    transition: 200ms linear;
     color: #f38181;
 }
 
 .menu_link:hover::after{
-    display: inline-block;
+    transition: 200ms linear;
+    display: inline-block;  
 }
 
 /* intro */
@@ -190,16 +192,18 @@ margin-right: 20px;
   }
 
   .photo_item:hover .photo_item_img{
+    transition: 200ms linear;
     transform: translate3d(-10px, -10px, 0);
   }
 
   .photo_item:hover .photo_item_img img{
+    transition: 200ms linear;
       opacity: .1;
   }
 
   .photo_item_img{
       background: linear-gradient( to bottom,#f38181, #fce38a);
-      transition: transform .2s linear;
+      transition: transform 200ms linear;
   }
 
   .photo_item_img img{
@@ -218,6 +222,8 @@ margin-right: 20px;
       opacity: 0;
   }
   .photo_item:hover .sn{
+    transition: 200ms linear;
+
       opacity: 1;
   }
 
@@ -231,6 +237,8 @@ margin-right: 20px;
      margin: 0 1px;
   }
   .sn_i:hover{
+    transition: 200ms linear;
+      
       background: #95e1d3;
   }
       
